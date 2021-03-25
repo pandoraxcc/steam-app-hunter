@@ -1,0 +1,14 @@
+/* Header Styling */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.img-wrapper {
+    text-align: center;
+    margin-right: 25px;
+}
+

@@ -1,3 +1,71 @@
-.header-logo {
-    width: 50%;
+
+/* Importing Google Font - Roboto */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+body {
+font-family: "Ubuntu", sans-serif;
+background-color: white;
+color: white;
+line-height: 1.6;
+}
+
+/* Header Styling */
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #1e2122;
+}
+
+img.logo {
+max-width: 50%;
+height: auto;
+margin-left: 20px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline #1f7ae6 5px;
+    color: white;
+}
+
+
+.btn-secondary, .dropdown-toggle, .btn {
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 1.6;
+    padding: 8px 15px;
+    margin-right: 20px;
+    color: white;
+    background-color: #1f7ae6;
+    border-style: none;
+}
+
+.login-register-button {
+    padding-bottom: 20px;
+}
+
+/* End of Header Styling */
