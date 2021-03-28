@@ -51,7 +51,9 @@ margin-left: 20px;
     text-decoration: underline #1f7ae6 5px;
     color: white;
 }
-
+.nav-links {
+    padding-top: 20px;
+}
 
 .btn-secondary, .dropdown-toggle, .btn {
     font-size: 16px;
@@ -69,3 +71,22 @@ margin-left: 20px;
 }
 
 /* End of Header Styling */
+
+/* Utilities */
+
+.submit-profile {
+    font-size: 1.6rem;
+    background-color: #1f7ae6;
+    margin: 20px 0px;
+}
+
+.input-profile {
+    text-align: center;
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+
+.form-control:focus {
+    color: green;
+    box-shadow: 0px 1px 1px rgba(77, 163, 7, 0.075) inset, 0px 0px 8px rgba(31, 131, 7, 0.5);
+}
