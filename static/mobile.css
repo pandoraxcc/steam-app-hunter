@@ -17,6 +17,6 @@ header {
 /* Utilities */
 @media screen and (max-width: 768px) {
     .submit-profile {
-        font-size: 18px;
+        font-size: 1.0rem;
     }
   }
