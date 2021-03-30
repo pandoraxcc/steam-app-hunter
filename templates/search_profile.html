@@ -5,45 +5,39 @@ Results of search
 {% endblock %}
 
 {% block main %}
-<!-- Slider of the home page -->
-<div id="steam_app_slider" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="../static/images/track-user-game-actvity-steam-app-hunter_1280x720.jpeg" alt="First slide" style="max-height:384px; object-fit: cover;">
-      </div>
-    </div>
-  </div>
-<!-- End of slider -->
-<!-- CTA -->
 <section>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-sm-4 display-md-3 text-center text-dark">Getting Steam player's activity</h1>
-            <p class="lead text-center text-dark">Curious how many hours spent in games? Let it to us!</p>
+            <h1 class="display-sm-4 display-md-3 text-center text-dark">You requested</h1>
+            <p class="lead text-center text-dark scrolling-on">{{ provided_url }}</p>
         </div>
     </div>
 </section>
-<!-- End of CTA -->
 {% if if_profile_exists == True %}
     <section>
         <div class="profile-result-wrapper">
             <div class="steam-profile">
-                <img src="{{steam_api_response[0]}}" alt="Steam avatar" class="">
+                <img src="{{steam_profile}}" alt="Steam avatar">
             </div>
             <div class="steam-data">
-                <p><a href="{{steam_api_response[1]}}">Steam profile url: {{ steam_api_response[1]}}</a></p>
+                <h3 class="isplay-sm-4 display-md-3 text-dark">{{ user_nickname }}</h3>
+                <a class="btn btn-outline-success" href="{{real_steam_id}}" role="button"><i class="fas fa-user"></i> Steam Profile</a>
+                <a class="btn btn-primary" href="/#profile-sumbission" type="button"><i class="fas fa-retweet"></i> Search another?</a>
+            </div>
+        </div>
+    </section>
+{% else %}
+    <section>
+        <div class="profile-result-wrapper">
+            <div class="steam-profile">
+                <img src="../static/images/unknown-porfile.jpeg" alt="Steam avatar" class="">
+            </div>
+            <div class="steam-data">
+                <p class="text-danger">We can't fetch provided url</p>
+                <a class="btn btn-primary" href="/#profile-sumbission" type="button"><i class="fas fa-retweet"></i> Try again?</a>
+            </div>
             </div>
         </div>
     </section>
 {% endif %}
-<section>
-    <div class="container my-3">
-        <form class="form-inline" action="/request_profile" method="post">
-            <input class="form-control w-100 input-profile" type="text" id="steamidinput" placeholder="Steam profile link">
-            <div class="col text-center">
-                <button class="btn btn-primary submit-profile" type="submit">Submit</button>
-            </div>
-        </form>
-    </div>
-</section>
 {% endblock %}
