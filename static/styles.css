@@ -16,6 +16,8 @@ font-family: "Ubuntu", sans-serif;
 background-color: white;
 color: white;
 line-height: 1.6;
+margin: 0;
+padding: 0;
 }
 
 /* Header Styling */
@@ -74,6 +76,21 @@ margin-left: 20px;
 
 /* Profile Wrapper */
 
+.profile-result-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+}
+.navigation-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.steam-profile img {
+    padding-right: 40px;
+}
 
 /* Index Page Input Form */
 
@@ -95,6 +112,13 @@ margin-left: 20px;
     background-color: #1f7ae6;
     margin: 20px 0px;
 }
+
+.scrolling-on {
+    word-wrap: break-word;
+}
+
+/* FAQ section */
+
 
 /* Footer */
 
