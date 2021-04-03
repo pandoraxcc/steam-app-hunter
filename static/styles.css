@@ -91,7 +91,28 @@ margin-left: 20px;
 .steam-profile img {
     padding-right: 40px;
 }
+/* Features section */
 
+.features-wrapper {
+    color: #1e2122;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px 0px;
+}
+
+.features-wrapper i {
+    color:#1f7ae6;
+}
+
+.features-wrapper h3 {
+    margin: 10px 0px;
+}
+
+.features-wrapper i:hover {
+    color: #0e4c97;
+}
 /* Index Page Input Form */
 
 .form-control {
