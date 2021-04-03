@@ -20,8 +20,13 @@ Results of search
                 <img src="{{steam_profile}}" alt="Steam avatar">
             </div>
             <div class="steam-data">
-                <h3 class="isplay-sm-4 display-md-3 text-dark">{{ user_nickname }}</h3>
-                <a class="btn btn-outline-success" href="{{real_steam_id}}" role="button"><i class="fas fa-user"></i> Steam Profile</a>
+                <h3 class="display-sm-4 display-md-3 text-dark">{{ user_nickname }}</h3>
+                {% if status == False %}
+                <p class="lead text-dark scrolling-on">Gaming data unavailable</p>
+                {% else %}
+                <p class="lead text-dark scrolling-on"><i class="fas fa-clock"></i> {{ hours }} hour(s)</p>
+                {% endif %}
+                <a class="btn btn-outline-success" href="{{real_steam_id}}" role="button" target="_blank"><i class="fas fa-user"></i> Steam Profile</a>
                 <a class="btn btn-primary" href="/#profile-sumbission" type="button"><i class="fas fa-retweet"></i> Search another?</a>
             </div>
         </div>
