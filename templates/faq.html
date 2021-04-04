@@ -1,0 +1,104 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block main %}
+<!-- Slider of the home page -->
+<div id="steam_app_slider" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="../static/images/steam-hunter-faq.jpg" alt="First slide"
+                style="max-height:384px; object-fit: cover;">
+        </div>
+    </div>
+</div>
+<!-- End of slider -->
+<!-- CTA -->
+<section>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-sm-4 display-md-3 text-center text-dark">Got questions?</h1>
+            <p class="lead text-center text-dark">Here are the most common questions and answers</p>
+        </div>
+    </div>
+</section>
+<!-- End of CTA -->
+<!-- QA section -->
+<section>
+    <div class="container">
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            >> How do you collect data?
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body faq">
+                        Data is collected through Steam API. We make request using the profile links you provide and
+                        after that get steam profile information.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            >> Is it legal?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body faq">
+                        We collect only open profiles - profiles that are available to anyone in the internet, that means there is no
+                        illegal action.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            >> How do I get stats on profiles?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body faq">
+                        You need to be registered to save your submissions. Once you registered, you can save, track and
+                        download profiles data.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour">
+                            >> How often is data update?
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body faq">
+                        Once you registered and submitted profiles, we update all gathered stats on them daily.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container text-center">
+    <a class="btn btn-primary" style="margin: 30px 0px;" href="/" type="button"><i class="fas fa-home" ></i> Back to main page</a>
+</div>
+
+
+{% endblock %}
