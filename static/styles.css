@@ -140,7 +140,13 @@ margin-left: 20px;
 
 /* FAQ section */
 
+.faq {
+    color: #1e2122;
+}
 
+.btn-link {
+    background-color: #222;
+}
 /* Footer */
 
 footer {
