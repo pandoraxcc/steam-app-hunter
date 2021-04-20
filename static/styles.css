@@ -73,7 +73,6 @@ margin-left: 20px;
     padding-bottom: 20px;
 }
 
-
 /* Profile Wrapper */
 
 .profile-result-wrapper {
@@ -147,6 +146,15 @@ margin-left: 20px;
 .btn-link {
     background-color: #222;
 }
+/* Register */
+.form-group {
+    color: #222;
+}
+
+.form-control {
+    padding: 10px 20px;
+}
+
 /* Footer */
 
 footer {
