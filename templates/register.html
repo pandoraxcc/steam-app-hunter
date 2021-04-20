@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block main %}
+<!-- CTA -->
+<section>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-sm-4 display-md-3 text-center text-dark">Register</h1>
+            <p class="lead text-center text-dark">Register to save and export user data</p>
+        </div>
+    </div>
+</section>
+<!-- End of CTA -->
+<!-- Registration form -->
+<section>
+    <div class="container text-center">
+        <form action="/register" method="post">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input class="form-control" type="text" id="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input class="form-control" type="text" id="password">
+            </div>
+            <div class="form-group">
+                <label for="password2">Confirm Password</label>
+                <input class="form-control" type="text" id="password2">
+            </div>
+        </form>
+    </div>
+        
+</section>
+<div class="container text-center">
+    <a class="btn btn-primary" style="margin: 30px 15px;" href="/" type="submit"><i class="fas fa-user" ></i> Register</a>
+    <a class="btn btn-primary" style="margin: 30px 15px;" href="/" type="button"><i class="fas fa-home" ></i> Back to main page</a>
+</div>
+
+
+
+{% endblock %}
