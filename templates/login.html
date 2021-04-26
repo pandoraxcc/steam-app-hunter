@@ -9,8 +9,8 @@ Register
 <section>
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-sm-4 display-md-3 text-center text-dark">Register</h1>
-            <p class="lead text-center text-dark">Register to save and export user data</p>
+            <h1 class="display-sm-4 display-md-3 text-center text-dark">Login</h1>
+            <p class="lead text-center text-dark">Already the user? Login now and start saving data</p>
         </div>
     </div>
 </section>
@@ -19,7 +19,7 @@ Register
 {% block content %}
 <div class="container">
     {% for message in get_flashed_messages() %}
-    <div class="alert alert-warning text-center">
+    <div class="alert alert-warning">
         <button type="button" class="close" data-dismiss="alert">&times;</button>
         {{ message }}
     </div>
@@ -39,12 +39,8 @@ Register
                 <label for="password">Password</label>
                 <input class="form-control" type="password" id="password" name="password">
             </div>
-            <div class="form-group">
-                <label for="password2">Confirm Password</label>
-                <input class="form-control" type="password" id="password2" name="password2">
-            </div>
             <div class="container form-buttons">
-                <button class="btn btn-primary"  type="submit"><i class="fas fa-user" ></i> Register</button>
+                <button class="btn btn-primary"  type="submit"><i class="fas fa-angle-right" ></i> Login</button>
                 <a href="/" class="btn btn-primary" role="button"><i class="fas fa-home" ></i> Back to main page </a>
             </div>
         </form>
