@@ -5,15 +5,10 @@ Home
 {% endblock %}
 
 {% block main %}
-<!-- Slider of the home page -->
-<div id="steam_app_slider" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="../static/images/track-user-game-actvity-steam-app-hunter_1280x720.jpeg" alt="First slide" style="max-height:384px; object-fit: cover;">
-      </div>
-    </div>
-  </div>
-<!-- End of slider -->
+<div class="container-fluid p-0 m-0">
+    <img class="d-block w-100" src="../static/images/track-game-activity.jpeg" alt="Image for the home page, track gaming activity" style="max-height:384px; object-fit: cover;">
+</div>
+
 <!-- Features Section-->
 <section>
     <div class="features-wrapper">
@@ -34,24 +29,46 @@ Home
         </div>
     </div>
 </section>
-<!-- CTA -->
+
+<!-- Search area -->
 <section>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-sm-4 display-md-3 text-center text-dark">Getting Steam player's activity</h1>
-            <p class="lead text-center text-dark">Curious how many hours spent in games? Let it to us!</p>
+    <div class="container-fluid text-white bg-dark p-4">
+        <div class="row p-4">
+            <div class="col">
+                <h1 class="h2 text-center">Getting Steam player's activity</h1>
+                <p class="text-center">Curious how many hours spent in games? Let it to us!</p> 
+                
+            </div>
         </div>
-    </div>
-</section>
-<!-- End of CTA -->
-<section>
-    <div class="container my-3">
-        <form class="form-inline" action="/request_profile" method="post">
-            <input id="profile-sumbission" class="form-control w-100 input-profile" type="text" id="steamidinput" name="providedurl" placeholder="Steam profile link">
-            <div class="col text-center">
-                <button class="btn btn-primary submit-profile" type="submit">Submit</button>
+
+        <form class="form-inline pb-4" action="/request_profile" method="post">
+            <div class="row mx-auto">
+                <div class="col my-auto">
+                    <input class="form-control input-profile" type="text" name="providedurl" placeholder="Steam profile link">
+                </div>
+
+                <div class="col my-auto">
+                    <button class="btn btn-primary btn-sm m-0" type="submit">Submit</button>
+                </div>
             </div>
         </form>
     </div>
 </section>
+
+<!-- About area -->
+<section>
+    <div class="container">
+        <div class="row p-3">
+            <div class="col-12 col-md-6 col-lg-6 my-auto">
+                <h2 class="h3 text-dark pt-3 pb-3  text-sm-center text-md-left">Getting information about players</h2>
+                <p class="text-dark text-justify">Current tool is my refactored cs50 final project from Harvard University. Steam hunter checks user profiles and helps to get the information on gaming activity. The tool is able to process any type of steam profile (default/custom links) and save the stats about the user in the database.</br></br> The tool is using Steam API to process the calls. If you want to keep track of your submissions, you need to create an account. Each submission aftewards will be associated with the user and available on the history page. </p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-6 my-auto">
+                <img class="img-fluid" src="../static/images/steam-logo.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
 {% endblock %}
