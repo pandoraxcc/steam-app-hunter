@@ -11,6 +11,12 @@
     padding: 0;
 }
 
+html {
+    position:relative;
+    min-height: 100%;
+
+}
+
 body {
 font-family: "Ubuntu", sans-serif;
 background-color: white;
@@ -80,7 +86,7 @@ margin-left: 20px;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 40px 0px;
+    padding-top: 50px;
 }
 .navigation-buttons {
     display: flex;
@@ -150,8 +156,9 @@ margin-left: 20px;
 /* Footer */
 
 footer {
-    display: flex;
-    flex-direction: column;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
     background-color: #1e2122;
     text-align: center;
     font-size: 0.8rem;
