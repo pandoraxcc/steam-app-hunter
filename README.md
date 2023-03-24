@@ -11,7 +11,7 @@ Web app that grabs public steam profiles and collects the data on player's gamin
 7.Create a secret key for your flask app: that could be any random string, you can use the standard library uuid.</br>
 8.Create file config.py `touch config.py` in the root category and set the variables `steam_api='STEAM API KEY', secret_key='YOUR SECRET KEY'`<br>
 9.Initialize the database: `python3 models.py` (if you decide to have your own)</br>
-9.Run the server: `python3 steamapp.py runserver`</br>
+9.Run the server: `python3 steamapp.py`</br>
 10.Open the browser and navigate to 127.0.0.1:5000</br></br>
 
 ### Features:
