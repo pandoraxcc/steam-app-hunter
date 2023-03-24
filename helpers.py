@@ -4,7 +4,8 @@ from steam.steamid import SteamID
 from steamwebapi.api import ISteamUser, IPlayerService, ISteamUserStats
 from flask import Flask, flash, redirect, render_template, request, session, send_file, after_this_request
 from models import db, Users, SteamProfiles
-from api import steam_api
+from sqlalchemy import and_
+from config import steam_api
 
 
 class ProcessHelper:

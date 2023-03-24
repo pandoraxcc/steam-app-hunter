@@ -1,53 +1,63 @@
 {% extends "layout.html" %}
 
-{% block title %}
-Register
-{% endblock %}
+    {% block title %}
+    Register
+    {% endblock %}
 
-{% block main %}
-<!-- CTA -->
-<section>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-sm-4 display-md-3 text-center text-dark">Login</h1>
-            <p class="lead text-center text-dark">Already the user? Login now and start saving data</p>
+    {% block main %}
+        <!-- CTA -->
+        <section>
+            <div class="container-fluid bg-dark text-white pt-5 pb-5">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="h2 display-sm-4 display-md-3 text-center">Login</h1>
+                        <p class="text-center scrolling-on">Already the user? Login now and start saving data</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Warning messages -->
+        {% block content %}
+        <div class="container mt-5 w-50">
+            {% for message in get_flashed_messages() %}
+            <div class="alert alert-danger text-center">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                {{ message }}
+            </div>
+            {% endfor %}
+
+            {% block page_content %}{% endblock %}
         </div>
-    </div>
-</section>
-<!-- End of CTA -->
-<!-- Registration form -->
-{% block content %}
-<div class="container">
-    {% for message in get_flashed_messages() %}
-    <div class="alert alert-warning">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
-        {{ message }}
-    </div>
-    {% endfor %}
+        {% endblock %}
 
-    {% block page_content %}{% endblock %}
-</div>
-{% endblock %}
-<section>
-    <div class="container text-center col-md-3">
-        <form action="" method="post">
-            <div class="form-group">
-                    <label for="username">Username</label>
-                    <input class="form-control" type="text" id="username" name="username"> 
+        <section style="margin-bottom: 250px;">
+            <div class="container text-center col-md-3">
+                <form action="" method="post">
+
+                    <div class="form-group">
+                            <label for="username">Username</label>
+                            <input class="form-control" type="text" id="username" name="username"> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input class="form-control" type="password" id="password" name="password">
+                    </div>
+
+                    <div class="container form-buttons">
+
+                        <div class="row">
+                            <div class="col-6 col-md-6 col-lg-6 my-auto">
+                                <button class="btn btn-primary"  type="submit"><i class="fas fa-user" ></i> Login</button>
+                            </div>
+
+                            <div class="col-6 col-md-6 col-lg-6 my-auto">
+                                <a href="/" class="btn btn-primary" role="button"><i class="fas fa-home" ></i> Main page </a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input class="form-control" type="password" id="password" name="password">
-            </div>
-            <div class="container form-buttons">
-                <button class="btn btn-primary"  type="submit"><i class="fas fa-angle-right" ></i> Login</button>
-                <a href="/" class="btn btn-primary" role="button"><i class="fas fa-home" ></i> Back to main page </a>
-            </div>
-        </form>
-    </div>
-</section>
-
-
-
-
-{% endblock %}
+        </section>
+    {% endblock %}

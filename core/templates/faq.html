@@ -6,27 +6,24 @@ Home
 
 {% block main %}
 <!-- Slider of the home page -->
-<div id="steam_app_slider" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="../static/images/steam-hunter-faq.jpg" alt="First slide"
-                style="max-height:384px; object-fit: cover;">
-        </div>
-    </div>
+<div class="container-fluid p-0 m-0">
+    <img class="d-block w-100" src="../static/images/steam-hunter-faq.jpg" alt="Image for the faq page" style="max-height:384px; object-fit: cover;">
 </div>
-<!-- End of slider -->
+
 <!-- CTA -->
 <section>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-sm-4 display-md-3 text-center text-dark">Got questions?</h1>
-            <p class="lead text-center text-dark">Here are the most common questions and answers</p>
+    <div class="container-fluid bg-dark text-white pt-5 pb-5">
+        <div class="row">
+            <div class="col">
+                <h1 class="h2 display-sm-4 display-md-3 text-center">Got questions?</h1>
+                <p class="text-center scrolling-on">Here are the most common questions and answers</p>
+            </div>
         </div>
     </div>
 </section>
-<!-- End of CTA -->
+
 <!-- QA section -->
-<section>
+<section class="mt-5" style="margin-bottom: 250px;">
     <div class="container">
         <div id="accordion">
             <div class="card">
@@ -34,7 +31,7 @@ Home
                     <h5 class="mb-0">
                         <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
                             aria-expanded="true" aria-controls="collapseOne">
-                            >> How do you collect data?
+                            How do you collect data?
                         </button>
                     </h5>
                 </div>
@@ -51,7 +48,7 @@ Home
                     <h5 class="mb-0">
                         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
                             aria-expanded="false" aria-controls="collapseTwo">
-                            >> Is it legal?
+                            Is it legal?
                         </button>
                     </h5>
                 </div>
@@ -67,7 +64,7 @@ Home
                     <h5 class="mb-0">
                         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
                             aria-expanded="false" aria-controls="collapseThree">
-                            >> How do I get stats on profiles?
+                            How do I get stats on profiles?
                         </button>
                     </h5>
                 </div>
@@ -83,7 +80,7 @@ Home
                     <h5 class="mb-0">
                         <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour"
                             aria-expanded="false" aria-controls="collapseFour">
-                            >> How often is data update?
+                            How often is data update?
                         </button>
                     </h5>
                 </div>
@@ -95,10 +92,8 @@ Home
             </div>
         </div>
     </div>
+    <div class="container text-center">
+        <a class="btn btn-primary" style="margin: 30px 0px;" href="/" type="button"><i class="fas fa-home" ></i> Back to main page</a>
+    </div>
 </section>
-<div class="container text-center">
-    <a class="btn btn-primary" style="margin: 30px 0px;" href="/" type="button"><i class="fas fa-home" ></i> Back to main page</a>
-</div>
-
-
 {% endblock %}
