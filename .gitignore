@@ -9,6 +9,9 @@ config.py
 # C extensions
 *.so
 
+#Steam folder
+.steam/
+
 # Distribution / packaging
 .Python
 build/
