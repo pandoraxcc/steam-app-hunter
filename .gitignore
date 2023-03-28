@@ -6,6 +6,11 @@ __pycache__/
 # Stean api
 config.py
 
+#Enviroment
+steam/
+
+#Database
+steamapp.sqllite
 # C extensions
 *.so
 
