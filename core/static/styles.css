@@ -1,0 +1,170 @@
+
+/* Importing Google Font - Roboto */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
+
+/* General Styling */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    position:relative;
+    min-height: 100%;
+
+}
+
+body {
+font-family: "Ubuntu", sans-serif;
+background-color: white;
+color: white;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+}
+
+/* Header Styling */
+
+header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #1e2122;
+}
+
+img.logo {
+max-width: 50%;
+height: auto;
+margin-left: 20px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline #1f7ae6 5px;
+    color: white;
+}
+.nav-links {
+    padding-top: 20px;
+}
+
+.btn-secondary, .dropdown-toggle, .btn {
+    font-size: 16px;
+    font-family: "Ubuntu", sans-serif;
+    line-height: 1.6;
+    padding: 0.5rem 1rem;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: #1f7ae6;
+    border-style: none;
+}
+
+.login-register-button {
+    padding-bottom: 20px;
+}
+
+/* Profile Wrapper */
+
+.profile-result-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.navigation-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.steam-profile img {
+    padding-right: 40px;
+}
+/* Features section */
+
+.features-wrapper {
+    color: #1e2122;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 40px 0px;
+}
+
+.features-wrapper i {
+    color:#1f7ae6;
+}
+
+.features-wrapper h3 {
+    margin: 10px 0px;
+}
+
+.features-wrapper i:hover {
+    color: #0e4c97;
+}
+/* Index Page Input Form */
+
+.form-control {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+
+/* End of Input Form */
+
+/* Utilities */
+
+
+.scrolling-on {
+    word-wrap: break-word;
+}
+
+/* FAQ section */
+
+.faq {
+    color: #1e2122;
+}
+
+.btn-link {
+    background-color: #222;
+}
+/* Register */
+.form-group {
+    color: #222;
+}
+
+.form-control {
+    padding: 10px 20px;
+}
+
+/* Footer */
+
+footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #1e2122;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.footer-container {
+    margin: 20px 0px;
+    padding: 10px 30px;
+}
