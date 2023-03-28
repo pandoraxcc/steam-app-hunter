@@ -11,8 +11,12 @@ steam/
 
 #Database
 steamapp.sqllite
+
 # C extensions
 *.so
+
+#Steam folder
+steam/
 
 # Distribution / packaging
 .Python
