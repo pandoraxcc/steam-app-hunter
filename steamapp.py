@@ -20,7 +20,7 @@ def index():
 
     return render_template('index.html')
 
-# Route for rendering the results page
+# Route for rendering the  results page 
 @app.route('/profile-submission', methods=['GET'])
 def redirect_submission():
     return redirect(url_for('index', _anchor='profile-submission'))
