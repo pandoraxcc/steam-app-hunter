@@ -12,6 +12,9 @@ config.py
 #Steam folder
 steam/
 
+#Database
+steamapp.sqllite
+
 # Distribution / packaging
 .Python
 build/
