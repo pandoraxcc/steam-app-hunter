@@ -10,7 +10,7 @@ config.py
 *.so
 
 #Steam folder
-.steam/
+steam/
 
 # Distribution / packaging
 .Python
